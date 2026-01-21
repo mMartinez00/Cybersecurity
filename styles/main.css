@@ -1,0 +1,160 @@
+:root {
+  /* Brand (cyber accents) */
+  --accent: #22d3ee;     /* cyan */
+  --accent-2: #a78bfa;   /* soft violet */
+
+  /* Base (matte dark) */
+  --bg: #070b12;         /* main background (deeper, cleaner) */
+  --bg-2: #0b1220;       /* secondary background */
+  --surface: #0f172a;    /* cards/sections */
+  --surface-2: #111c33;  /* elevated surface */
+
+  /* Glass (frosted effect) */
+  --glass-bg: rgba(15, 23, 42, 0.55);   /* frosted slate */
+  --glass-bg-2: rgba(17, 28, 51, 0.45); /* lighter frosted */
+  --glass-border: rgba(255, 255, 255, 0.12);
+
+  /* Text */
+  --text: #eaf0ff;            /* primary text */
+  --text-secondary: #b8c2d8;  /* secondary text */
+  --text-third: #7f8aa3;      /* tertiary text */
+
+  /* Borders & shadows */
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+
+  /* Status */
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #fb7185;
+
+  /* Radius + spacing helpers */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+body {
+  background: radial-gradient(900px circle at 10% 10%, rgba(45, 212, 191, 0.10), transparent 40%),
+              radial-gradient(700px circle at 90% 20%, rgba(96, 165, 250, 0.10), transparent 45%),
+              var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* .glass {
+  background: linear-gradient(
+    180deg,
+    var(--glass-highlight),
+    transparent
+  ), var(--glass-bg);
+
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+} */
+
+
+/* Navbar (responsive + glass) */
+.navbar {
+  position: sticky;
+  top: 12px;
+  z-index: 1000;
+  /* Centered container */
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+
+  /* Sizing */
+  min-height: 64px;
+  padding: 0.75rem 1.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  /* Glass look */
+  /* background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg); */
+}
+
+/* Logo */
+.navbar__logo {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  font-size: 1.05rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Menu */
+.navbar__menu {
+  display: flex;
+  flex-wrap: wrap;              /* allows wrapping on smaller screens */
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem 1rem;            /* row gap / column gap */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__menu li {
+  margin: 0;                    /* gap handles spacing now */
+}
+
+.navbar__menu a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1;
+  transition: color 180ms ease, background 180ms ease;
+}
+
+.navbar__menu a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.navbar__menu a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Small screens: stack logo + menu neatly */
+@media (max-width: 600px) {
+  .navbar {
+    top: 10px;
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .navbar__menu a {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.92rem;
+  }
+}
