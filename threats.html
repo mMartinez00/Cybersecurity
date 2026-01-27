@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/threats.css">
     <title>Threats</title>
 </head>
 <body>
@@ -21,11 +22,485 @@
     </ul>
   </div>
 </nav>
-    
 
+<main class="main">
+  <div class="main__content threats">
 
+    <!-- Intro / Hero -->
+    <section class="threats__hero glass-card">
+      <h1>Cyber Threats</h1>
+      <p>
+        Cyber threats take many forms and often target everyday users through email, websites,
+        and unsecured networks. Below are common cyber attacks explained in simple terms to help
+        you recognize them and reduce risk.
+      </p>
+    </section>
 
-<script src="./scripts/main.js" defer></script>
+    <!-- Category: Social / Human -->
+    <section class="threats__group glass-card">
+      <h2>Social & Human-Based Attacks</h2>
+      <p class="threats__group-subtitle">
+        These threats rely on manipulation, urgency, or reused passwords to gain access.
+      </p>
+
+      <div class="threats__grid">
+        <!-- Threat Card -->
+        <article class="threat-card">
+          <header class="threat-card__header">
+            <div class="threat-card__icon">
+              <svg class="icon icon--phishing" width="48" height="48" viewBox="0 0 64 64" fill="none"
+     xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titlePhishing">
+              <title id="titlePhishing">Phishing</title>
+
+              <!-- Envelope -->
+              <path d="M12 20h34c2.2 0 4 1.8 4 4v18c0 2.2-1.8 4-4 4H12c-2.2 0-4-1.8-4-4V24c0-2.2 1.8-4 4-4Z"
+                  stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M10 24l19 14c1.8 1.3 4.2 1.3 6 0l19-14"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 44l14-10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M54 44L40 34" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+            <!-- Hook (phishing) -->
+              <path d="M54 14c0 4-3.2 7-7 7-2.8 0-5 2.2-5 5v4"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M39 34c0 3.3 2.7 6 6 6"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Phishing</h3>
+
+            <p class="threat-card__summary">
+              Fake emails, calls, or messages trick users into clicking links or sharing login details.
+            </p>
+          </header>
+
+          <details class="threat-card__details">
+            <summary>Learn more</summary>
+            <ul>
+              <li><strong>Common signs:</strong> urgent tone, unfamiliar sender, suspicious links.</li>
+              <li><strong>Example:</strong> “Your account will be locked—verify now.”</li>
+            </ul>
+          </details>
+
+          
+        </article>
+
+        <article class="threat-card">
+          <header class="threat-card__header">
+            <div class="threat-card__icon">
+                <svg class="icon icon--credential-stuffing"
+                  width="48" height="48" viewBox="0 0 64 64" fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-labelledby="titleCredential">
+                <title id="titleCredential">Credential Stuffing</title>
+
+                <!-- Login panel -->
+                <rect x="8" y="10" width="30" height="44" rx="4"
+                      stroke="currentColor" stroke-width="3"/>
+                <line x1="14" y1="20" x2="32" y2="20"
+                      stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <line x1="14" y1="28" x2="32" y2="28"
+                      stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <line x1="14" y1="36" x2="24" y2="36"
+                      stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+                <!-- Keys (reused credentials) -->
+                <circle cx="46" cy="22" r="5"
+                        stroke="currentColor" stroke-width="3"/>
+                <line x1="51" y1="22" x2="58" y2="22"
+                      stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <line x1="55" y1="22" x2="55" y2="26"
+                      stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+                <circle cx="46" cy="38" r="5"
+                        stroke="currentColor" stroke-width="3"/>
+                <line x1="51" y1="38" x2="58" y2="38"
+                      stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <line x1="55" y1="38" x2="55" y2="42"
+                      stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+
+            <h3>Credential Stuffing</h3>
+            <p class="threat-card__summary">
+              Attackers use leaked passwords from other sites to take over accounts.
+            </p>
+          </header>
+
+          <details class="threat-card__details">
+            <summary>Learn more</summary>
+            <ul>
+              <li><strong>Why it works:</strong> people reuse passwords across websites.</li>
+              <li><strong>Where it happens:</strong> email, social media, shopping accounts.</li>
+            </ul>
+          </details>
+
+          
+        </article>
+
+        <article class="threat-card">
+          <header class="threat-card__header">
+            <div class="threat-card__icon">
+              <svg class="icon icon--social-engineering"
+                width="48" height="48" viewBox="0 0 64 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-labelledby="titleSocialEng">
+              <title id="titleSocialEng">Social Engineering</title>
+          
+              <!-- Chat bubble (communication) -->
+              <rect x="6" y="10" width="34" height="24" rx="4"
+                stroke="currentColor" stroke-width="3"/>
+              <path d="M14 34l-2 8 8-6"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          
+              <!-- Fake profile inside chat -->
+              <circle cx="23" cy="20" r="4"
+                stroke="currentColor" stroke-width="3"/>
+              <path d="M17.5 28c1.5-4 9.5-4 11 0"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"/>
+          
+              <!-- Warning triangle (manipulation risk) -->
+              <path d="M46 18l12 20H34l12-20Z"
+                stroke="currentColor" stroke-width="3"
+                stroke-linejoin="round"/>
+              <line x1="46" y1="24" x2="46" y2="32"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"/>
+              <circle cx="46" cy="36" r="1.5"
+                fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Social Engineering</h3>
+            <p class="threat-card__summary">
+              Manipulating people by impersonating trusted individuals to gain sensitive information.
+            </p>
+          </header>
+
+          <details class="threat-card__details">
+            <summary>Learn more</summary>
+            <ul>
+              <li><strong>Common tactic:</strong> pretending to be IT support, a boss, or a bank.</li>
+              <li><strong>Goal:</strong> get passwords, verification codes, or money.</li>
+            </ul>
+          </details>
+
+          
+        </article>
+      </div>
+    </section>
+
+    <!-- Category: Malware -->
+    <section class="threats__group glass-card">
+      <h2>Malware-Based Threats</h2>
+      <p class="threats__group-subtitle">
+        These threats involve harmful software that damages devices or blocks access to files.
+      </p>
+
+      <div class="threats__grid">
+        <article class="threat-card">
+          <header class="threat-card__header">
+            <div class="threat-card__icon">
+              <svg class="icon icon--malware"
+                width="48" height="48" viewBox="0 0 64 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-labelledby="titleMalware">
+              <title id="titleMalware">Malware</title>
+
+              <!-- Device / window -->
+              <rect x="10" y="12" width="44" height="36" rx="4"
+                stroke="currentColor" stroke-width="3" />
+              <line x1="10" y1="20" x2="54" y2="20"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+
+              <!-- Bug body -->
+              <ellipse cx="32" cy="35" rx="6" ry="7"
+                stroke="currentColor" stroke-width="3" />
+              <circle cx="32" cy="26" r="3.5"
+                stroke="currentColor" stroke-width="3" />
+
+              <!-- Bug legs -->
+              <line x1="24" y1="32" x2="18" y2="29"
+                    stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              <line x1="24" y1="38" x2="18" y2="41"
+                    stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              <line x1="40" y1="32" x2="46" y2="29"
+                    stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              <line x1="40" y1="38" x2="46" y2="41"
+                    stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+
+              <!-- Antennae -->
+              <line x1="30" y1="23" x2="27" y2="20"
+                    stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              <line x1="34" y1="23" x2="37" y2="20"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <h3>Malware</h3>
+            <p class="threat-card__summary">
+              Harmful software that enters devices through fake updates, attachments, or unsafe downloads.
+            </p>
+          </header>
+
+          <details class="threat-card__details">
+            <summary>Learn more</summary>
+            <ul>
+              <li><strong>Common sources:</strong> shady downloads, email attachments, pop-ups.</li>
+              <li><strong>Impact:</strong> spyware, data theft, or system damage.</li>
+            </ul>
+          </details>
+
+          
+        </article>
+
+        <article class="threat-card">
+          <header class="threat-card__header">
+            <div class="threat-card__icon">
+              <svg class="icon icon--ransomware"
+                width="48" height="48" viewBox="0 0 64 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-labelledby="titleRansomware">
+              <title id="titleRansomware">Ransomware</title>
+
+              <!-- File -->
+              <path d="M14 10h22l10 10v34c0 2.2-1.8 4-4 4H14c-2.2 0-4-1.8-4-4V14c0-2.2 1.8-4 4-4Z"
+                stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M36 10v10h10"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- Lock on file -->
+              <rect x="22" y="30" width="16" height="14" rx="3"
+                stroke="currentColor" stroke-width="3"/>
+              <path d="M26 30v-3c0-3.3 2.7-6 6-6s6 2.7 6 6v3"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- Timer / deadline -->
+              <circle cx="52" cy="44" r="10"
+                stroke="currentColor" stroke-width="3"/>
+              <line x1="52" y1="44" x2="52" y2="39"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <line x1="52" y1="44" x2="56" y2="46"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+
+            <h3>Ransomware</h3>
+            <p class="threat-card__summary">
+              Malicious software encrypts files and demands payment to restore access.
+            </p>
+          </header>
+
+          <details class="threat-card__details">
+            <summary>Learn more</summary>
+            <ul>
+              <li><strong>Impact:</strong> you can lose access to important files.</li>
+              <li><strong>Best defense:</strong> backups + updates + safe downloads.</li>
+            </ul>
+          </details>
+
+          
+        </article>
+      </div>
+    </section>
+
+    <!-- Category: Network / Web -->
+    <section class="threats__group glass-card">
+      <h2>Network & Web Attacks</h2>
+      <p class="threats__group-subtitle">
+        These threats target networks, websites, or data moving between systems.
+      </p>
+
+      <div class="threats__grid">
+        <article class="threat-card">
+          <header class="threat-card__header">
+            <div class="threat-card__icon">
+              <svg class="icon icon--mitm"
+                width="48" height="48" viewBox="0 0 64 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-labelledby="titleMITM">
+              <title id="titleMITM">Man-in-the-Middle (MITM)</title>
+
+              <!-- Left device -->
+              <rect x="8" y="18" width="18" height="28" rx="3"
+                stroke="currentColor" stroke-width="3"/>
+              <line x1="8" y1="24" x2="26" y2="24"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+              <!-- Right device -->
+              <rect x="38" y="18" width="18" height="28" rx="3"
+                stroke="currentColor" stroke-width="3"/>
+              <line x1="38" y1="24" x2="56" y2="24"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+              <!-- Intercepted connection (broken/dashed line) -->
+              <line x1="26" y1="32" x2="38" y2="32"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-dasharray="6 6"/>
+
+              <!-- Middle node (attacker intercept) -->
+              <circle cx="32" cy="32" r="5"
+                stroke="currentColor" stroke-width="3"/>
+
+                <!-- Signal arrows -->
+              <path d="M22 40l6-4-6-4"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M42 40l-6-4 6-4"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <h3>Man-in-the-Middle (MITM)</h3>
+            <p class="threat-card__summary">
+              Intercepting data between users and networks, often on public Wi-Fi.
+            </p>
+          </header>
+
+          <details class="threat-card__details">
+            <summary>Learn more</summary>
+            <ul>
+              <li><strong>Risk:</strong> attackers may capture logins or personal info.</li>
+              <li><strong>Common scenario:</strong> unsecured public Wi-Fi.</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="threat-card">
+          <header class="threat-card__header">
+            <div class="threat-card__icon">
+              <svg class="icon icon--web-app-attacks"
+                width="48" height="48" viewBox="0 0 64 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-labelledby="titleWebApp">
+              <title id="titleWebApp">Web Application Attacks</title>
+
+              <!-- Browser window -->
+              <rect x="8" y="10" width="34" height="30" rx="4"
+                stroke="currentColor" stroke-width="3"/>
+              <line x1="8" y1="18" x2="42" y2="18"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="14" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="19" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="24" cy="14" r="1.5" fill="currentColor"/>
+
+              <!-- Code brackets inside browser -->
+              <path d="M18 30l-4-4 4-4"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M26 22l4 4-4 4"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="22" y1="21" x2="20" y2="33"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+              <!-- Injection arrow -->
+              <path d="M42 28h6"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M46 24l4 4-4 4"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- Database (data target) -->
+              <path d="M50 38c0-3.3-6.7-6-15-6s-15 2.7-15 6 6.7 6 15 6 15-2.7 15-6Z"
+                stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M20 38v10c0 3.3 6.7 6 15 6s15-2.7 15-6V38"
+                stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <h3>Web Application Attacks</h3>
+            <p class="threat-card__summary">
+              Exploiting website vulnerabilities (such as SQL injection) to steal or damage data.
+            </p>
+          </header>
+
+          <details class="threat-card__details">
+            <summary>Learn more</summary>
+            <ul>
+              <li><strong>Target:</strong> websites and web apps with weak security.</li>
+              <li><strong>Impact:</strong> data leaks, defacement, service disruption.</li>
+            </ul>
+          </details>
+
+          
+        </article>
+
+        <article class="threat-card">
+          <header class="threat-card__header">
+            <div class="threat-card__icon">
+              <svg class="icon icon--ddos"
+                width="48" height="48" viewBox="0 0 64 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-labelledby="titleDDoS">
+              <title id="titleDDoS">DDoS Attack</title>
+
+              <!-- Server -->
+              <rect x="36" y="14" width="18" height="36" rx="3"
+                stroke="currentColor" stroke-width="3"/>
+              <line x1="40" y1="22" x2="50" y2="22"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <line x1="40" y1="30" x2="50" y2="30"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <line x1="40" y1="38" x2="50" y2="38"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="41" cy="46" r="1.5" fill="currentColor"/>
+
+              <!-- Traffic waves (flood) -->
+              <path d="M8 22c6 0 6-6 12-6s6 6 12 6"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 32c6 0 6-6 12-6s6 6 12 6"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 42c6 0 6-6 12-6s6 6 12 6"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- Overload indicator -->
+              <path d="M30 50h6"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M33 44v12"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+
+            <h3>DDoS Attacks</h3>
+            <p class="threat-card__summary">
+              Flooding a website or server with traffic to make it unavailable.
+            </p>
+          </header>
+
+          <details class="threat-card__details">
+            <summary>Learn more</summary>
+            <ul>
+              <li><strong>Impact:</strong> websites become slow or completely unavailable.</li>
+              <li><strong>Target:</strong> businesses, schools, and online services.</li>
+            </ul>
+          </details>
+
+          
+        </article>
+      </div>
+    </section>
+
+    <!-- Warning signs -->
+    <section class="threats__signs glass-card">
+      <h2>Common Warning Signs</h2>
+      <ul class="threats__signs-list">
+        <li>Messages that create urgency or pressure you to act quickly</li>
+        <li>Requests for passwords, verification codes, or payment</li>
+        <li>Unexpected links or attachments</li>
+        <li>Websites that look familiar but have unusual URLs</li>
+      </ul>
+      <a href="./protection.html" class="threats__cta">Learn how to protect yourself →</a>
+    </section>
+
+  </div>
+</main>
+
+<script src="./scripts/main.js"></script>
 
 </body>
 </html>
