@@ -1,0 +1,157 @@
+.protection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Hero */
+.protection__hero {
+    padding: clamp(1.2rem, 3.8vw, 2rem);
+    text-align: center;
+}
+
+.protection__hero h1 {
+    margin-bottom: 1rem;
+}
+
+.protection__hero p {
+    color: var(--text-secondary);
+    line-height: 1.65;
+    max-width: 75ch;
+    margin: 0 auto;
+}
+
+.protection__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 1.25rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text);
+    background: var(--accent);
+    border: 1px solid var(--border);
+    transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.protection__cta:hover {
+    background-color: rgba(34, 211, 238, .8);
+}
+
+/* Protection Groups */
+.protection__group {
+    padding: clamp(1.2rem, 3.8vw, 2rem);
+}
+
+.protection__group h2 {
+    margin-bottom: 0.5rem;
+}
+
+.protection__group-subtitle {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 75ch;
+    margin-bottom: 1.25rem;
+}
+
+/* Protection Grid */
+.protection__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+    .protection__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .protection__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Protection card */
+.tip-card {
+    padding: 1.1rem;
+    border-radius: var(--radius-lg);
+    background: var(--glass-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+}
+
+.tip-card__header {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: .75rem;
+}
+
+.tip-card__title {
+    font-size: 1.05rem;
+    line-height: 1.2;
+}
+
+.tip-card__icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--accent);
+}
+
+.tip-card__icon svg {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.tip-card__text {
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+/* Checklist */
+.protection__checklist {
+    padding: clamp(1.2rem, 3.8vw, 2rem);
+}
+
+.checklist {
+    list-style: none;
+    margin: 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.checklist__item {
+    padding: .85rem .9rem;
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, .03);
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.checklist__item label {
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.checklist__item input[type="checkbox"] {
+    margin-top: .2rem;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent);
+}
