@@ -25,61 +25,76 @@
 </nav>
 
 <main class="main">
-  <section class="contact__content">
+  <div class="main__content contact">
 
-  <div class="contact__info glass-card">
-    <header class="contact__header">
-      <h1>Contact Us!</h1>
-    </header>
+    <!-- HERO -->
+    <section class="contact__hero glass-card">
+      <h1>Contact</h1>
+      <p>Send us a message or explore trusted cybersecurity resources and personal security tools.</p>
+    </section>
 
-    <p><i class="fa-solid fa-mobile"></i> (888)888-8888</p>
-    <p><i class="fa-solid fa-envelope"></i> stm@lagcc.cuny.edu.com</p>
-    <p><i class="fa-solid fa-location-pin"></i> New York, New York</p>
+    <!-- CONTENT -->
+    <section class="contact__content">
+      <div class="contact__info glass-card">
+        <h2>Get in touch</h2>
+        <p><i class="fa-solid fa-mobile"></i> (888) 888-8888</p>
+        <p><i class="fa-solid fa-envelope"></i> stm@lagcc.cuny.edu</p>
+        <p><i class="fa-solid fa-location-pin"></i> New York, New York</p>
 
-    <h2>Resources</h2>
-    <p><a href="https://www.ic3.gov/" target="_blank"><i class="fa-solid fa-shield"></i> FBI IC3 <i class="fa-solid fa-arrow-right"></i> Filing Complaints</a></p>
-    <p><a href="https://www.cisa.gov/" target="_blank"><i class="fa-solid fa-lock"></i> Cybersecurity and Infrastructure Security Agency (CISA)</a></p>
-    <p><a href="https://www.ftc.gov/" target="_blank"><i class="fa-solid fa-fingerprint"></i> Federal Trade Commission (Identity Theft Recovery)</a></p>
+        <h2>Official Cybersecurity Resources</h2>
+        <p><a href="https://www.ic3.gov/" target="_blank" rel="noopener"><i class="fa-solid fa-shield"></i> FBI IC3 <i class="fa-solid fa-arrow-right"></i> Filing Complaints</a></p>
+        <p><a href="https://www.cisa.gov/" target="_blank" rel="noopener"><i class="fa-solid fa-lock"></i> CISA</a></p>
+        <p><a href="https://www.ftc.gov/" target="_blank" rel="noopener"><i class="fa-solid fa-fingerprint"></i> FTC (Identity Theft Recovery)</a></p>
+
+        <h2>Personal Security Tools</h2>
+        <p><a href="https://nordvpn.com" target="_blank" rel="noopener">NordVPN – Secure encrypted browsing</a></p>
+        <p><a href="https://www.mcafee.com" target="_blank" rel="noopener">McAfee – Malware & phishing protection</a></p>
+        <p><a href="https://www.norton.com" target="_blank" rel="noopener">Norton 360 – Device & identity protection</a></p>
+        <p><a href="https://bitwarden.com" target="_blank" rel="noopener">Bitwarden – Secure password manager</a></p>
+        <p><a href="https://1password.com" target="_blank" rel="noopener">1Password – Password & data protection</a></p>
+        <p><a href="https://lifelock.norton.com" target="_blank" rel="noopener">LifeLock – Identity theft monitoring</a></p>
+        <p><a href="https://one.google.com" target="_blank" rel="noopener">Google One – Encrypted cloud storage</a></p>
+        <p><a href="https://www.apple.com/icloud/icloud-plus/" target="_blank" rel="noopener">Apple iCloud+ – Privacy & encryption</a></p>
+
+        <p class="contact__disclaimer">
+          These links are provided for educational purposes and do not represent endorsements.
+        </p>
+      </div>
+
+      <div class="contact__form-container glass-card">
+        <h2>Send a message</h2>
+
+        <form class="contact__form"
+          action="mailto:yourname@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="contact__field">
+            <label class="contact__label" for="name">Full Name</label>
+            <input class="contact__input" type="text" id="name" name="Name" required>
+          </div>
+
+          <div class="contact__field">
+            <label class="contact__label" for="email">Email</label>
+            <input class="contact__input" type="email" id="email" name="Email" required>
+          </div>
+
+          <div class="contact__field">
+            <label class="contact__label" for="message">Message</label>
+            <textarea class="contact__textarea" id="message" name="Message" rows="5" required></textarea>
+          </div>
+
+          <div class="contact__actions">
+            <button class="contact__button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
   </div>
-
-
-  <!-- Contact form -->
-  <div class="contact__form-container glass-card">
-    <form
-      class="contact__form"
-      action="mailto:yourname@example.com"
-      method="post"
-      enctype="text/plain"
-    >
-  <div class="contact__field">
-    <label class="contact__label" for="name">Full Name:</label>
-      <input class="contact__input" type="text" id="name" name="Name" required>
-    </div>
-
-  <div class="contact__field">
-    <label class="contact__label" for="email">Email:</label>
-    <input class="contact__input" type="email" id="email" name="Email" required>
-  </div>
-
-  <div class="contact__field">
-    <label class="contact__label" for="message">Message:</label>
-    <textarea
-      class="contact__textarea"
-      id="message"
-      name="Message"
-      rows="5"
-      required>
-    </textarea>
-  </div>
-
-  <div class="contact__actions">
-    <button  class="contact__button">Submit</button>
-  </div>
-      </form>
-    </div>
-
-  </section>
 </main>
+
+
 
 <script src="./scripts/main.js"></script>
     
